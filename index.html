@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+      <div class="top-header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><h1>NEER</h1></a>
+        </div>
+        <i class="fas fa-align-justify"></i>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">INDEX</a></li>
+            <li><a href="#">PROPERTIES</a></li>
+            <li><a href="#">PAGES</a></li>
+            <li><a href="#">AGENTS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">MY ACCOUNT</a></li>
+            <li><a href="#">SUBMIT PROPERTY</a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+
+        <div class="container">
+      <div class="banner">
+        <h1>FIND YOUR PROPERTY</h1>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</P>
+        <input type="text">
+        <button>Find</button>
+      </div>
+      <div class="overlay"></div>
+    </div>
+    <img src="images/1.jpg" alt="">
+    <div class="overlay"></div>
+  </header>
+
+
+  <section class="">
+
+  </section>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  /* $(window).scroll(function(){
+       if ($(window).scrollTop() >= 110) {
+           $('.top-header').addClass('fixed-header');
+
+       }
+       else {
+           $('.top-header').removeClass('fixed-header');
+
+       }
+   });
+;*/
+$(window).scroll(function(){
+  if($(window).scrollTop() >= 100)
+  {
+    $('.top-header').addClass('fixed-header');
+  }
+
+  else{
+      $('.top-header').removeClass('fixed-header');
+  }
+});
+
+
+
+$("i").click(function(){
+    $("ul").slideToggle();
+});
+
+
+
+  </script>
+
+</body>
+</html>
